@@ -1,0 +1,53 @@
+body{
+    background-color: black;
+}
+.imgdiv{
+    width: 80%;
+    height: 350px;
+    /* background-color: aqua; */
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    box-shadow: 1px 1px 10px 3px white;
+    animation: slider 8s infinite linear;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.heading1{
+color: bisque;
+text-align: center;
+margin-top: 40px;
+font-size: 50px;
+}
+
+@keyframes slider{
+    0% {background-image:url('https://i.dawn.com/large/2015/12/567d1ca3f205c.jpg'); } 
+    20%{background-image:url('https://wander-lush.org/wp-content/uploads/2020/01/FairyMeadowsPakistanPatrickPoendlCanvaPro.jpg'); }
+    40%{background-image:url('https://www.pakistantoursguide.pk/wp-content/uploads/2015/08/Shangrila-Resort-north-west-of-Skardu.jpg') ;}
+    60%{background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/17/79/30/e7/beautiful-places-in-pakistan.jpg');}
+    80%{background-image: url('https://img.traveltriangle.com/blog/wp-content/uploads/2021/11/OgPTVPak.jpg');}
+    100%{background-image: url('https://media-cdn.tripadvisor.com/media/photo-s/17/79/30/e3/beautiful-places-in-pakistan.jpg');}
+}
+
+@media (max-width: 768px) {
+    .heading1{
+        font-size: 30px;
+
+      
+    }
+    .imgdiv{
+        height: 300px;
+    }
+}
+
+@media(max-width :320px) {
+    h1 {
+        font-size: 8px;
+       
+    }
+    .imgdiv{
+        height: 230px;
+    }
+}
